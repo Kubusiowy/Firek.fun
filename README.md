@@ -1,1 +1,2 @@
-A sleek and interactive personal site featuring my social links, projects, music, and everything that defines my digital presence.
+![linia](https://www.gify.net/data/media/562/linia-ruchomy-obrazek-0184.gif)
+EZ
