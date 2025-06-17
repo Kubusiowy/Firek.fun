@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="title.css">
+    <link rel="stylesheet" href="styleMain/title.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="audio-player.css">
+    <link rel="stylesheet" href="styleMain/audio-player.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./files/titleLogo/bmwPng.png">
+    <link rel="stylesheet" href="./styleMain/DcProfile.css">
+
 
     <title>Firek fun</title>
 </head>
@@ -28,8 +29,14 @@
 
         <div class="title">
             <div class="top-right">
-                <div class="icon"><span>👁</span> 236</div>
-                <div class="icon"><span>#</span> 1</div>
+                <div class="icon tooltip">
+                    <span>👁</span> 236
+                    <span class="tooltip-text">Liczba wyświetleń</span>
+                </div>
+                <div class="icon tooltip">
+                    <span>#</span> 1
+                    <span class="tooltip-text">Pozycja w rankingu</span>
+                </div>
             </div>
 
             <div class="h1">
@@ -75,11 +82,27 @@
             <audio id="audio" src="./files/music/fagata-leosia-malik-trójkąt-og-leak-scdler.mp3"></audio>
         </div>
 
+        <div class="dc-profile-clean">
+            <div class="dc-left">
+                <img src="./files/dcImages/black%20screen.png" alt="Avatar" class="dc-avatar">
+                <div class="dc-info">
+                    <div class="dc-name">Kubusiowy#8917</div>
+                    <div class="dc-badges">
+                        <img src="./files/dcImages/HYPESQUAD.png" alt="HypeSquad" title="HypeSquad">
+                        <img src="./files/dcImages/free-discord-nitro-icon-download-in-svg-png-gif-file-formats--voice-premium-social-media-pack-logos-icons-5582570.webp" alt="Bug Hunter" title="Bug Hunter">
+                    </div>
+                </div>
+            </div>
+            <a href="https://discord.com/users/kubus8917" target="_blank" class="dc-add-btn">
+                <i class="fas fa-user-plus"></i> Dodaj mnie
+            </a>
+        </div>
+
 
     </div>
 
-    <script src="animationContent.js"></script>
-    <script src="audioScript.js"></script>
-<script src="typingScrypt.js"></script>
+    <script src="jsMain/animationContent.js"></script>
+    <script src="jsMain/audioScript.js"></script>
+<script src="jsMain/typingScrypt.js"></script>
 </body>
 </html>

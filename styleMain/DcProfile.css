@@ -1,0 +1,85 @@
+.dc-profile-clean {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Segoe UI', sans-serif;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 12px;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+.dc-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.dc-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dc-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.dc-name {
+    font-weight: bold;
+    font-size: 16px;
+    word-break: break-word;
+}
+
+.dc-badges {
+    display: flex;
+    gap: 4px;
+    margin-top: 4px;
+    flex-wrap: wrap;
+}
+
+.dc-badges img {
+    height: 20px;
+    width: 20px;
+}
+
+.dc-add-btn {
+    background-color: #5865f2;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+
+.dc-add-btn:hover {
+    background-color: #4752c4;
+}
+
+
+@media (max-width: 600px) {
+    .dc-profile-clean {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dc-add-btn {
+        align-self: stretch;
+        justify-content: center;
+        width: 100%;
+    }
+}

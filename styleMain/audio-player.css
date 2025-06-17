@@ -2,7 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #111;
+    justify-content: center; /* <-- na środku */
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
     border-radius: 12px;
     padding: 16px;
     color: white;
@@ -10,9 +12,8 @@
     gap: 16px;
     width: 100%;
     box-sizing: border-box;
-    box-shadow: 0 0 20px rgba(255,255,255,0.05);
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.2);
 }
-
 
 .cover {
     width: 64px;
@@ -21,35 +22,34 @@
     object-fit: cover;
 }
 
-
 .track-info {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 10px;
     min-width: 200px;
+    align-items: center;
+    text-align: center;
 }
-
 
 .title {
     font-weight: bold;
     font-size: 14px;
     display: flex;
     align-items: center;
-    gap: 2px;
+    gap: 6px;
     flex-wrap: wrap;
-
+    justify-content: center;
 }
-
 
 .progress-container {
     display: flex;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
 }
-
 
 #progress-bar {
     flex: 1;
@@ -58,6 +58,7 @@
     background: #444;
     border-radius: 4px;
     outline: none;
+    max-width: 300px;
 }
 
 #progress-bar::-webkit-slider-thumb {
@@ -70,9 +71,21 @@
     box-shadow: 0 0 4px #fff;
 }
 
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    width: 100%;
+}
+
+.volume-control i {
+    font-size: 16px;
+    color: white;
+}
 
 #volume-slider {
-    width: 80px;
+    width: 100px;
     height: 6px;
     -webkit-appearance: none;
     background: #333;
@@ -90,56 +103,70 @@
     box-shadow: 0 0 4px white;
 }
 
-
 #play-btn {
     background: none;
     border: none;
     color: white;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 22px;
     padding: 4px;
 }
 
-
-#current-time, #duration {
+#current-time,
+#duration {
     font-size: 12px;
     min-width: 45px;
     text-align: center;
 }
 
 
+
 @media (max-width: 768px) {
     .audio-player {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .cover {
         width: 100%;
+        max-width: 300px;
         height: auto;
-        max-height: 200px;
         object-fit: contain;
     }
 
     .progress-container {
         flex-direction: column;
-        align-items: stretch;
         gap: 8px;
-    }
-
-    #volume-slider {
-        width: 100%;
     }
 
     #progress-bar {
         width: 100%;
+        max-width: 300px;
     }
 
     .title {
         font-size: 16px;
     }
 
-    #play-btn {
-        align-self: center;
+    .volume-control {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #volume-slider {
+        width: 100%;
+        max-width: 200px;
     }
 }
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+
+

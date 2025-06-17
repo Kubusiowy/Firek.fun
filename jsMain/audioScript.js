@@ -5,6 +5,7 @@ const currentTimeEl = document.getElementById('current-time');
 const durationEl = document.getElementById('duration');
 const volumeSlider = document.getElementById('volume-slider');
 
+audio.play().catch(err => console.log('Play blocked:', err));
 
 document.addEventListener('click', () => {
     audio.muted = false;
